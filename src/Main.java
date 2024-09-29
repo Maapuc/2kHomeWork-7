@@ -36,8 +36,18 @@ public class Main {
         System.out.println();
         {
             List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
-
-
+            Map<String, Integer> map = new HashMap<>();
+            for (String numbers : strings) {
+                var num = map.get(numbers);
+                if (num == null) {
+                    map.put(numbers, 1);
+                } else {
+                    map.put(numbers, num + 1);
+                }
+            }
+            for (Integer value : map.values()) {
+                System.out.println(value);
+            }
         }
     }
 
