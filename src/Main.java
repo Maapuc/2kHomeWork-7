@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -29,8 +26,20 @@ public class Main {
         System.out.println();
         System.out.println();
         {
+            var strings = List.of("один", "два","два", "три", "три", "три");
+            var set = new HashSet<>(strings);
+            for (String s : set) {
+                System.out.println(s);
+            }
+        }
+        System.out.println();
+        System.out.println();
+        {
+            List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
 
 
         }
     }
+
+
 }
