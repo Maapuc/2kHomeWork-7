@@ -26,7 +26,7 @@ public class Main {
         System.out.println();
         System.out.println();
         {
-            var strings = List.of("один", "два","два", "три", "три", "три");
+            var strings = List.of("один", "два", "два", "три", "три", "три");
             var set = new HashSet<>(strings);
             for (String s : set) {
                 System.out.println(s);
@@ -35,7 +35,7 @@ public class Main {
         System.out.println();
         System.out.println();
         {
-            List<String> strings = new ArrayList<>(List.of("один", "два","два", "три", "три", "три"));
+            List<String> strings = new ArrayList<>(List.of("один", "два", "два", "три", "три", "три"));
             Map<String, Integer> map = new HashMap<>();
             for (String numbers : strings) {
                 var num = map.get(numbers);
@@ -49,6 +49,7 @@ public class Main {
                 System.out.println(value);
             }
         }
+
     }
 
 
